@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - yuvidi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">yuvidi</a>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="/index.html#products">Collection</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-hero">
+            <div class="hero-content">
+                <h1>Our Products</h1>
+                <p>Discover our complete collection of innovative charging solutions</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-header">
+                <div class="filters">
+                    <select name="sort" id="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="product-detail.html?id=1">
+                        <img src="https://img.kwcdn.com/product/fancy/077c402e-31ce-4958-9daa-fc3d4fce7d69.jpg" alt="7-in-1 Charging Station">
+                        </a>
+                        <span class="discount-tag">-40%</span>
+                        <div class="product-badges">
+                            <span class="badge new">New</span>
+                            <span class="badge bestseller">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>7-in-1 Smart Charging Station</h3>
+                        <div class="product-features">
+                            <span><i class="fas fa-bolt"></i> 15W Fast Charging</span>
+                            <span><i class="fas fa-clock"></i> Digital Clock</span>
+                            <span><i class="fas fa-moon"></i> Night Light</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="original-price">$89.99</p>
+                            <p class="price">$53.99</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <a href="product-detail.html?id=2">
+                        <img src="https://img.kwcdn.com/product/fancy/da1323e3-bb52-42ef-a3d6-4fbade418845.jpg" alt="Multi-function Wireless Charger">
+                        </a>
+                        <span class="discount-tag">-35%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Multi-function Wireless Charger</h3>
+                        <div class="product-features">
+                            <span><i class="fas fa-bolt"></i> Fast Charging</span>
+                            <span><i class="fas fa-mobile-alt"></i> Multi-Device</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="original-price">$69.99</p>
+                            <p class="price">$45.49</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://img.kwcdn.com/product/fancy/e3444e4b-b3aa-4af9-9ee5-c119df0b5803.jpg" alt="3-in-1 Wireless Charger">
+                        <span class="discount-tag">-45%</span>
+                        <div class="product-badges">
+                            <span class="badge trending">Trending</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>3-in-1 Wireless Charger with Clock</h3>
+                        <div class="product-features">
+                            <span><i class="fas fa-bolt"></i> 15W Fast Charging</span>
+                            <span><i class="fas fa-clock"></i> Digital Display</span>
+                            <span><i class="fas fa-mobile"></i> Magnetic Mount</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="original-price">$79.99</p>
+                            <p class="price">$43.99</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://img.kwcdn.com/product/fancy/51feb687-3c01-41b5-baec-db5867e7eb72.jpg" alt="25W Wireless Charger">
+                        <span class="discount-tag">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>25W Fast Wireless Charger</h3>
+                        <div class="product-features">
+                            <span><i class="fas fa-bolt"></i> 25W Power</span>
+                            <span><i class="fas fa-shield-alt"></i> Safe Charging</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="original-price">$59.99</p>
+                            <p class="price">$41.99</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://img.kwcdn.com/product/fancy/3e900b11-6d89-452f-a376-10a8bb95e963.jpg" alt="Sleek 3-in-1 Charger">
+                        <span class="discount-tag">-50%</span>
+                        <div class="product-badges">
+                            <span class="badge new">New</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sleek 3-in-1 Wireless Charger</h3>
+                        <div class="product-features">
+                            <span><i class="fas fa-bolt"></i> 15W Fast Charging</span>
+                            <span><i class="fas fa-clock"></i> Digital Clock</span>
+                            <span><i class="fas fa-mobile"></i> Magnetic Mount</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="original-price">$99.99</p>
+                            <p class="price">$49.99</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-highlight">
+            <div class="features-container">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Charging</h3>
+                    <p>Up to 25W charging speed</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe & Reliable</h3>
+                    <p>Multiple protection systems</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync"></i>
+                    <h3>Compatibility</h3>
+                    <p>Works with all devices</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Same footer as index.html -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 style="font-size: 3rem; text-align: center;">yuvidi</h3>
+            </div>
+            <div class="footer-grid">
+                <!-- Company Info -->
+
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#products">Collection</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3 style="text-align: right;">Sign up and Get 5% Off On Your First Order</h3>
+                    <div class="social-links" style="justify-content: right;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 yuvidi. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function addToCart(button) {
+        // Change button appearance
+        button.innerHTML = "Added to Cart!";
+        button.style.backgroundColor = "#4CAF50";
+        
+        // Redirect to cart page after 1 second
+        setTimeout(() => {
+            window.location.href = "cart.html";
+        }, 1000);
+    }
+
+    async function loadProducts() {
+        try {
+            const response = await fetch('/products.json');
+            const data = await response.json();
+            const productGrid = document.querySelector('.product-grid');
+            productGrid.innerHTML = '';
+
+            Object.entries(data.products).forEach(([id, product]) => {
+                const productHTML = `
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="product-detail.html?id=${id}">
+                                <img src="${product.mainImage}" alt="${product.name}">
+                            </a>
+                            <span class="discount-tag">-${product.discount}%</span>
+                            ${product.badges.length ? `
+                                <div class="product-badges">
+                                    ${product.badges.map(badge => `
+                                        <span class="badge ${badge}">${badge.charAt(0).toUpperCase() + badge.slice(1)}</span>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="product-info">
+                            <h3>${product.name}</h3>
+                            <div class="product-features">
+                                ${product.features.map(feature => `
+                                    <span><i class="fas ${feature.icon}"></i> ${feature.text}</span>
+                                `).join('')}
+                            </div>
+                            <div class="price-container">
+                                <p class="original-price">$${product.originalPrice}</p>
+                                <p class="price">$${product.currentPrice}</p>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                `;
+                productGrid.innerHTML += productHTML;
+            });
+        } catch (error) {
+            console.error('Error loading products:', error);
+        }
+    }
+
+    // Load products when page loads
+    window.addEventListener('DOMContentLoaded', loadProducts);
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 

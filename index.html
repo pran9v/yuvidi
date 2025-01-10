@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yuvidi - Smart Charging Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #F5F6F7;
+            padding: 20px 10px;
+            flex-wrap: wrap;
+            /* Enables wrapping for smaller screens */
+        }
+
+        .feature-item {
+            text-align: center;
+            color: #2e3a59;
+            font-family: Arial, sans-serif;
+            flex: 1 1 200px;
+            /* Adjusts the layout for responsiveness */
+            margin: 10px;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            /* Icon size */
+            color: #2e3a59;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .feature-icon {
+                font-size: 30px;
+                /* Reduce icon size for smaller screens */
+            }
+
+            .feature-item p {
+                font-size: 12px;
+                /* Reduce text size for smaller screens */
+            }
+
+            .reviews-slider {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">yuvidi</a>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="/index.html#products">Collection</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="yuvidi">
+            <div class="hero-image">
+                <img src="https://img.kwcdn.com/product/fancy/81e512b9-05ff-40b3-9974-1ebca1232485.jpg?imageView2/2/w/800/q/70/format/webp"
+                    alt="7-in-1 Charging Station">
+            </div>
+            <div class="hero-content">
+                <h1>Discover the Wide Range of Mobile Accessories</h1>
+                <p>Stay Connected, smartly!</p>
+                <div class="hero-features">
+                    <span><i class="fas fa-mobile"></i> Universal Fit</span>
+                    <span><i class="fas fa-sync"></i> 360° Rotation</span>
+                </div>
+                <a href="#products" class="cta-button">View Collection</a>
+            </div>
+
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Collection</h2>
+            <div class="product-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- <section class="features-highlight">
+            <div class="features-container">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Charging</h3>
+                    <p>Up to 25W charging speed</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe & Reliable</h3>
+                    <p>Multiple protection systems</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync"></i>
+                    <h3>Compatibility</h3>
+                    <p>Works with all devices</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="features">
+            <div class="feature-item">
+                <i class="fa-solid fa-lock feature-icon"></i>
+                <p>100% Secure Payments</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-truck-fast feature-icon"></i>
+                <p>Fast & Free Shipping</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-tags feature-icon"></i>
+                <p>Exclusive Deals</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-thumbs-up feature-icon"></i>
+                <p>Trusted Products</p>
+            </div>
+        </section>
+
+
+        <!-- Why Choose Us Section -->
+        <!-- <section class="why-choose-us">
+            <div class="section-header">
+                <h2>Why Choose yuvidi</h2>
+                <p>Experience the difference with our premium charging solutions</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe & Reliable</h3>
+                    <p>Advanced protection systems ensure your devices charge safely every time.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Charging</h3>
+                    <p>Up to 25W charging capability gets your devices powered up quickly.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Built with high-grade materials for durability and performance.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is always here to help you.</p>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Customer Reviews Section -->
+        <div class="section-header" id="testimonials">
+            <h2>Our Customers speak for us</h2>
+        </div>
+        <div class="slider-container">
+
+            <button class="nav-button prev-button">←</button>
+            <button class="nav-button next-button">→</button>
+
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3 class="review-title">Perfect Controller Triggers!</h3>
+                    <p class="review-text">These triggers are amazing for gaming. Makes my gameplay so much smoother and
+                        responsive.</p>
+                    <div class="reviewer">
+                        <p class="reviewer-name">Mike G.</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3 class="review-title">Magnetic Phone Collar Works Great</h3>
+                    <p class="review-text">Strong magnets, perfect fit for my phone. Makes hands-free viewing so easy.
+                    </p>
+                    <div class="reviewer">
+                        <p class="reviewer-name">Sarah K.</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3 class="review-title">Amazing 3D VR Headset</h3>
+                    <p class="review-text">Comfortable fit and great visual quality. Makes watching movies feel like a
+                        theatre experience!</p>
+                    <div class="reviewer">
+                        <p class="reviewer-name">James T.</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3 class="review-title">360° Stand is Perfect</h3>
+                    <p class="review-text">Smooth rotation and very stable. Perfect for watching videos at any angle.
+                    </p>
+                    <div class="reviewer">
+                        <p class="reviewer-name">Lisa M.</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <h3 class="review-title">Great Gaming Finger Sleeves</h3>
+                    <p class="review-text">These anti-sweat sleeves are a game-changer! No more slippery screen while
+                        gaming.</p>
+                    <div class="reviewer">
+                        <p class="reviewer-name">Alex P.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get quick answers to your questions about our mobile phone accessories</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-plus"></i> Are your accessories compatible with all phone models?</h3>
+                    <p>Yes, our accessories are designed to work seamlessly with a wide range of phone models, including the latest iPhones, Samsung Galaxy devices, and other popular Android phones.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-plus"></i> What is your warranty policy?</h3>
+                    <p>All our products come with a 1-year warranty that covers manufacturing defects and technical issues. If you encounter any problems, our support team is here to help!</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-plus"></i> Do you offer international shipping?</h3>
+                    <p>Yes, we ship worldwide! No matter where you are, you can enjoy our high-quality mobile phone accessories delivered right to your doorstep.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-plus"></i> How do I clean and maintain my accessories?</h3>
+                    <p>To keep your accessories in top condition, simply wipe them with a soft, dry cloth. Avoid using harsh chemicals or abrasive materials to prevent damage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Being special has it's own Perks</h2>
+                <p>Sign up to get discounts, coupon codes & news</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+
+        <style>
+            .why-choose-us {
+                padding: 80px 20px;
+                background: #f9f9f9;
+            }
+
+            .section-header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .section-header h2 {
+                font-size: 2.5em;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .benefits-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .benefit-card {
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+
+            .benefit-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .benefit-card i {
+                font-size: 2.5em;
+                color: #4CAF50;
+                margin-bottom: 20px;
+            }
+
+            .slider-container {
+                position: relative;
+                overflow: hidden;
+                padding: 2rem;
+                width: 100%;
+            }
+
+
+
+            .customer-reviews {
+                padding: 80px 20px;
+            }
+
+            .reviews-slider {
+                display: flex;
+                gap: 2rem;
+                transition: transform 0.3s ease-out;
+                scroll-behavior: smooth;
+                flex-wrap: nowrap !important;
+                /* Force horizontal layout */
+                width: fit-content;
+                /* Ensure container fits all slides */
+            }
+
+            .reviews-slider::-webkit-scrollbar {
+                display: none;
+            }
+
+            .review-card {
+                flex: 0 0 auto;
+                width: calc(100vw - 4rem);
+                /* Account for container padding */
+                max-width: 350px;
+                padding: 1.5rem;
+                border-radius: 8px;
+                background: white;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .stars {
+                color: #FFD700;
+                margin-bottom: 0.5rem;
+            }
+
+            .review-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                color: #333;
+            }
+
+
+            .review-text {
+                color: #666;
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+
+            .reviewer {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .reviewer-image {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+            }
+
+            .reviewer-name {
+                color: #666;
+                font-size: 0.9rem;
+            }
+
+            .reviewer-info h4 {
+                color: #333;
+                margin-bottom: 5px;
+            }
+
+            .nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: white;
+                border: none;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            .prev-button {
+                left: 1rem;
+            }
+
+            .next-button {
+                right: 1rem;
+            }
+
+            .faq-section {
+                padding: 80px 20px;
+                background: #f9f9f9;
+            }
+
+            .faq-grid {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .faq-item {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .faq-item h3 {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #333;
+            }
+
+            .faq-item p {
+                display: none;
+                margin-top: 15px;
+                color: #666;
+                padding-left: 24px;
+            }
+
+            .faq-item.active p {
+                display: block;
+            }
+        </style>
+
+        <script>
+            // FAQ Toggle functionality
+            document.querySelectorAll('.faq-item h3').forEach(header => {
+                header.addEventListener('click', () => {
+                    const item = header.parentElement;
+                    const icon = header.querySelector('i');
+
+                    // Toggle FAQ answer
+                    const answer = item.querySelector('p');
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+
+                    // Toggle icon
+                    icon.classList.toggle('fa-plus');
+                    icon.classList.toggle('fa-minus');
+                });
+            });
+            const slider = document.querySelector('.reviews-slider');
+            const cards = document.querySelectorAll('.review-card');
+            const prevBtn = document.querySelector('.prev-button');
+            const nextBtn = document.querySelector('.next-button');
+
+            // Clone cards for infinite scroll
+            cards.forEach(card => {
+                const clone = card.cloneNode(true);
+                slider.appendChild(clone);
+            });
+
+            let currentIndex = 0;
+            const cardWidth = cards[0].offsetWidth + 32; // Including gap
+            let isTransitioning = false;
+
+            function slideNext() {
+                if (isTransitioning) return;
+                currentIndex++;
+                updateSlider();
+            }
+
+            function slidePrev() {
+                if (isTransitioning) return;
+                currentIndex--;
+                updateSlider();
+            }
+
+            function updateSlider() {
+                isTransitioning = true;
+                const offset = -currentIndex * cardWidth;
+                slider.style.transform = `translateX(${offset}px)`;
+
+                // Reset position when reaching the end or beginning
+                setTimeout(() => {
+                    if (currentIndex >= cards.length) {
+                        currentIndex = 0;
+                        slider.style.transition = 'none';
+                        slider.style.transform = 'translateX(0)';
+                        setTimeout(() => {
+                            slider.style.transition = 'transform 0.3s ease-out';
+                        }, 10);
+                    } else if (currentIndex < 0) {
+                        currentIndex = cards.length - 1;
+                        slider.style.transition = 'none';
+                        slider.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+                        setTimeout(() => {
+                            slider.style.transition = 'transform 0.3s ease-out';
+                        }, 10);
+                    }
+                    isTransitioning = false;
+                }, 300);
+            }
+
+            nextBtn.addEventListener('click', slideNext);
+            prevBtn.addEventListener('click', slidePrev);
+
+            // Touch and mouse drag functionality
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            let initialTransform;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX;
+                initialTransform = getTransformValue();
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX;
+                const walk = (startX - x) * 2;
+                const newTransform = initialTransform - walk;
+                slider.style.transform = `translateX(${-newTransform}px)`;
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                const currentTransform = getTransformValue();
+                currentIndex = Math.round(currentTransform / cardWidth);
+                updateSlider();
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                if (isDown) {
+                    isDown = false;
+                    updateSlider();
+                }
+            });
+
+            function getTransformValue() {
+                const transform = window.getComputedStyle(slider).getPropertyValue('transform');
+                const matrix = new DOMMatrix(transform);
+                return -matrix.m41 / cardWidth;
+            }
+
+            // Auto-play functionality
+            let autoPlayInterval = setInterval(slideNext, 3000);
+
+            slider.addEventListener('mouseenter', () => {
+                clearInterval(autoPlayInterval);
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                autoPlayInterval = setInterval(slideNext, 3000);
+            });
+        </script>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 style="font-size: 3rem; text-align: center;">yuvidi</h3>
+            </div>
+            <div class="footer-grid">
+                <!-- Company Info -->
+
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#products">Collection</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3 style="text-align: right;">Sign up and Get 5% Off On Your First Order</h3>
+                    <div class="social-links" style="justify-content: right;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 yuvidi. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(button) {
+            // Get the product ID from the button's data attribute
+            const productId = button.getAttribute('data-product-id');
+
+            // Redirect to cart.html with the product ID in the URL
+            window.location.href = `cart.html?id=${productId}`;
+        }
+
+        async function loadAllProducts() {
+            try {
+                const response = await fetch('/products.json');
+                const data = await response.json();
+                const productGrid = document.querySelector('.product-grid');
+                productGrid.innerHTML = '';
+
+                Object.entries(data.products).forEach(([id, product]) => {
+                    const productHTML = `
+                    <div class="product-card">
+                        <div class="product-image">
+                            <a href="product-detail.html?id=${id}">
+                                <img src="${product.mainImage}" alt="${product.name}">
+                            </a>
+                            <span class="discount-tag">-${product.discount}%</span>
+                            ${product.badges.length ? `
+                                <div class="product-badges">
+                                    ${product.badges.map(badge => `
+                                        <span class="badge ${badge}">${badge.charAt(0).toUpperCase() + badge.slice(1)}</span>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="product-info">
+                            <h3>${product.name}</h3>
+                            <div class="product-features">
+                                ${product.features.map(feature => `
+                                    <span><i class="fas ${feature.icon}"></i> ${feature.text}</span>
+                                `).join('')}
+                            </div>
+                            <div class="price-container">
+                                <p class="original-price">$${product.originalPrice}</p>
+                                <p class="price">$${product.currentPrice}</p>
+                            </div>
+                            <!-- Add data-product-id attribute to the button -->
+                            <button class="add-to-cart" onclick="addToCart(this)" data-product-id="${id}">Add to Cart</button>
+                        </div>
+                    </div>
+                `;
+                    productGrid.innerHTML += productHTML;
+                });
+            } catch (error) {
+                console.error('Error loading products:', error);
+            }
+        }
+
+        // Load all products when page loads
+        window.addEventListener('DOMContentLoaded', loadAllProducts);
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

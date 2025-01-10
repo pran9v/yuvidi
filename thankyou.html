@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - yuvidi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .thank-you-section {
+            text-align: center;
+            padding: 80px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .thank-you-icon {
+            color: #2B5C4B; /* Updated color */
+            font-size: 80px; /* Increased size */
+            margin-bottom: 20px;
+        }
+        .thank-you-title {
+            color: #2B5C4B; /* Updated color */
+            font-size: 36px; /* Increased size */
+            margin-bottom: 20px;
+            font-weight: 600; /* Added weight */
+        }
+        .thank-you-message {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 18px; /* Increased size */
+        }
+        .back-to-shop {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #2B5C4B; /* Updated color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 16px; /* Added font size */
+        }
+        .back-to-shop:hover {
+            background-color: #1E4538; /* Darker shade for hover */
+        }
+        .order-number {
+            font-weight: 600; /* Added weight */
+            color: #2B5C4B; /* Updated color */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">yuvidi</a>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="/index.html#products">Collection</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <i class="fas fa-gift thank-you-icon"></i> <!-- Updated icon -->
+            <h1 class="thank-you-title">Your Order is Confirmed!</h1> <!-- Updated title -->
+            <p class="thank-you-message">Thank you for shopping with us. Your order is being processed and will be shipped soon.</p> <!-- Updated message -->
+            <p class="thank-you-message">Order number: <span class="order-number" id="orderNumber"></span></p>
+            <a href="/index.html#products" class="back-to-shop">Continue Shopping</a>
+        </section>
+    </main>
+
+    <!-- Include your existing footer here -->
+
+    <script>
+        // Function to generate a random order number
+        function generateOrderNumber() {
+            const prefix = "YUVIDI"; // Prefix for the order number
+            const randomNumber = Math.floor(Math.random() * 1000000); // Random 6-digit number
+            return `${prefix}-${randomNumber}`;
+        }
+
+        // Display the generated order number
+        document.getElementById('orderNumber').textContent = generateOrderNumber();
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

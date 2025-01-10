@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-in-1 Smart Charging Station - yuvidi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Product Detail Section */
+        .product-detail-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .product-images {
+            position: relative;
+        }
+
+        .main-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thumbnail-images {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            /* Allow thumbnails to wrap on smaller screens */
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+            object-fit: cover;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .thumbnail:hover {
+            border-color: #4CAF50;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .badge.new {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .badge.bestseller {
+            background-color: #FFC107;
+            color: #333;
+        }
+
+        .price-section {
+            margin: 20px 0;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        .current-price {
+            font-size: 2em;
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
+        .discount {
+            color: #ff4444;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .features-list {
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .feature-item i {
+            margin-right: 10px;
+            color: #4CAF50;
+        }
+
+        .add-to-cart-section {
+            margin: 30px 0;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .quantity-btn {
+            background: #f5f5f5;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .quantity {
+            font-size: 1.2em;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .add-to-cart-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #45a049;
+        }
+
+        .product-description {
+            margin: 30px 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .shipping-info {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .shipping-info i {
+            color: #4CAF50;
+            margin-right: 10px;
+        }
+
+        /* Responsive Styles for Product Detail Section */
+        @media (max-width: 768px) {
+            .product-detail-section {
+                grid-template-columns: 1fr;
+                /* Stack product info and images vertically */
+                gap: 20px;
+            }
+
+            .product-images {
+                order: -1;
+                /* Move images to the top on smaller screens */
+            }
+
+            .thumbnail-images {
+                justify-content: center;
+                /* Center thumbnails on smaller screens */
+            }
+
+            .product-title {
+                font-size: 1.5em;
+                /* Reduce font size for smaller screens */
+            }
+
+            .current-price {
+                font-size: 1.5em;
+                /* Reduce font size for smaller screens */
+            }
+
+            .add-to-cart-btn {
+                font-size: 1em;
+                /* Reduce button font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-title {
+                font-size: 1.2em;
+                /* Further reduce font size for very small screens */
+            }
+
+            .current-price {
+                font-size: 1.2em;
+                /* Further reduce font size for very small screens */
+            }
+
+            .thumbnail {
+                width: 60px;
+                /* Reduce thumbnail size for very small screens */
+                height: 60px;
+            }
+
+            .quantity-btn {
+                width: 30px;
+                /* Reduce quantity button size */
+                height: 30px;
+                font-size: 1em;
+            }
+
+            .quantity {
+                font-size: 1em;
+                /* Reduce quantity text size */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">yuvidi</a>
+            </div>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="/index.html#products">Collection</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail-section">
+            <div class="product-info">
+                <h1 class="product-title"></h1>
+                <div class="product-badges">
+                    <!-- Badges will be added dynamically -->
+                </div>
+
+                <div class="price-section">
+                    <span class="original-price"></span>
+                    <span class="current-price"></span>
+                    <span class="discount"></span>
+                </div>
+
+                <div class="product-description">
+                    <h3>Product Description</h3>
+                    <p id="productDescription"></p> <!-- Updated to dynamically load description -->
+                </div>
+
+                <div class="features-list">
+                    <!-- Features will be added dynamically -->
+                </div>
+
+                <div class="add-to-cart-section">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+
+                <div class="shipping-info">
+                    <p><i class="fas fa-truck"></i> Free Shipping on orders over $50</p>
+                    <p><i class="fas fa-box"></i> 30-Day Return Policy</p>
+                    <p><i class="fas fa-shield-alt"></i> 1-Year Warranty</p>
+                </div>
+            </div>
+
+            <div class="product-images">
+                <img src="" alt="" class="main-image">
+                <div class="thumbnail-images">
+                    <!-- Thumbnails will be added dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include your existing footer here -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 style="font-size: 3rem; text-align: center;">yuvidi</h3>
+            </div>
+            <div class="footer-grid">
+                <!-- Company Info -->
+
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#products">Collection</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3 style="text-align: right;">Sign up and Get 5% Off On Your First Order</h3>
+                    <div class="social-links" style="justify-content: right;">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 yuvidi. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function updateQuantity(change) {
+            const quantitySpan = document.querySelector('.quantity');
+            let quantity = parseInt(quantitySpan.textContent) + change;
+            if (quantity < 1) quantity = 1;
+            quantitySpan.textContent = quantity;
+        }
+
+        function addToCart(button) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const quantity = parseInt(document.querySelector('.quantity').textContent);
+
+            // Redirect to cart page with product ID and quantity as URL parameters
+            window.location.href = `cart.html?id=${productId}&quantity=${quantity}`;
+        }
+
+        // Thumbnail click handler
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                document.querySelector('.main-image').src = this.src;
+            });
+        });
+
+        // Function to fetch products data
+        async function fetchProducts() {
+            try {
+                const response = await fetch('/products.json');
+                const data = await response.json();
+                return data.products;
+            } catch (error) {
+                console.error('Error loading products:', error);
+                return null;
+            }
+        }
+
+        async function loadProductDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const products = await fetchProducts();
+            const product = products[productId];
+
+            if (!product) {
+                window.location.href = 'products.html';
+                return;
+            }
+
+            // Update page title
+            document.title = `${product.name} - yuvidi`;
+
+            // Update main image
+            document.querySelector('.main-image').src = product.mainImage;
+            document.querySelector('.main-image').alt = product.name;
+
+            // Update thumbnails
+            const thumbnailsContainer = document.querySelector('.thumbnail-images');
+            thumbnailsContainer.innerHTML = product.thumbnails.map(thumb => `
+                <img src="${thumb}" alt="Product view" class="thumbnail" onclick="updateMainImage('${thumb}')">
+            `).join('');
+
+            // Update product info
+            document.querySelector('.product-title').textContent = product.name;
+
+            // Update badges
+            const badgesHTML = product.badges.map(badge => `
+                <span class="badge ${badge}">${badge.charAt(0).toUpperCase() + badge.slice(1)}</span>
+            `).join('');
+            document.querySelector('.product-badges').innerHTML = badgesHTML;
+
+            // Update price section
+            document.querySelector('.original-price').textContent = `$${product.originalPrice}`;
+            document.querySelector('.current-price').textContent = `$${product.currentPrice}`;
+            document.querySelector('.discount').textContent = `-${product.discount}%`;
+
+            // Update features
+            const featuresHTML = product.features.map(feature => `
+                <div class="feature-item">
+                    <i class="fas ${feature.icon}"></i>
+                    <span>${feature.text}</span>
+                </div>
+            `).join('');
+            document.querySelector('.features-list').innerHTML = featuresHTML;
+
+            // Update description
+            document.getElementById('productDescription').textContent = product.description; // Updated to load description
+        }
+
+        // Function to update main image when clicking thumbnails
+        function updateMainImage(src) {
+            document.querySelector('.main-image').src = src;
+        }
+
+        // Load product details when page loads
+        window.addEventListener('DOMContentLoaded', loadProductDetails);
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

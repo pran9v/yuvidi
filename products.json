@@ -1,0 +1,112 @@
+{
+    "products": {
+        "1": {
+            "name": "Game Controller Triggers",
+            "originalPrice": 17.99,
+            "currentPrice": 2.32,
+            "discount": 76,
+            "mainImage": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/357d7ba1cf1d72354823f6f61a4930b6.jpg?imageView2/2/w/800/q/70/format/webp",
+            "thumbnails": [
+                "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/5cb56008de47291c9c66ef77561a4dc5.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/eaef615c4d9dbadd734c8e0e299b13f5.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/fancy/a2ffcd3f-ad1e-4e6d-af96-88da52ad6f09.jpg?imageView2/2/w/800/q/70/format/webp"
+            ],
+            "badges": ["bestseller"],
+            "features": [
+                { "icon": "fa-gamepad", "text": "Enhanced Gaming" },
+                { "icon": "fa-bolt", "text": "Fast Charging" }
+            ],
+            "description": "Elevate your gaming experience with our Game Controller Triggers. Designed for maximum comfort and control, these triggers are perfect for all your favorite games."
+        },
+        "2": {
+            "name": "Magnetic Phone Cooler",
+            "originalPrice": 25.99,
+            "currentPrice": 12.88,
+            "discount": 50,
+            "mainImage": "https://img.kwcdn.com/product/fancy/8bbf97a5-0df1-4732-ba5a-41b430778aea.jpg?imageView2/2/w/800/q/70/format/webp",
+            "thumbnails": [
+                "https://img.kwcdn.com/product/fancy/b712c862-bb9a-43a1-911e-96d5c8a1a6da.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/fancy/e1480022-05a4-4d4b-a915-1f75378117ef.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/fancy/870e5e41-f387-425b-b308-8cdd6b99e1d5.jpg?imageView2/2/w/800/q/70/format/webp"
+            ],
+            "badges": ["trending"],
+            "features": [
+                { "icon": "fa-snowflake", "text": "Cooling Fan" },
+                { "icon": "fa-magnet", "text": "Magnetic Mount" }
+            ],
+            "description": "Keep your phone cool and your gameplay smooth with our Magnetic Phone Cooler. Equipped with a powerful cooling fan and magnetic mount, this cooler is perfect for long gaming sessions and intense multitasking."
+        },
+        "3": {
+            "name": "3D VR Headset",
+            "originalPrice": 88.40,
+            "currentPrice": 12.08,
+            "discount": 45,
+            "mainImage": "https://img.kwcdn.com/product/fancy/c0b2ed2b-875e-442f-8b45-116e26ac0aee.jpg?imageView2/2/w/800/q/70/format/webp",
+            "thumbnails": [
+                "https://img.kwcdn.com/product/fancyalgo/toaster-api/toaster-processor-image-cm2in/38da8fdc-86db-11ef-8313-0a580a661a02.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/fancy/19e23007-8123-4e9c-a018-62ec52d57d63.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/fancy/4c38e0a5-bf5a-40b7-92b9-8098cd51a21e.jpg?imageView2/2/w/800/q/70/format/webp"
+            ],
+            "badges": ["trending"],
+            "features": [
+                { "icon": "fa-vr-cardboard", "text": "VR Experience" },
+                { "icon": "fa-headset", "text": "Immersive Sound" }
+            ],
+            "description": "Step into a world of virtual reality with our 3D VR Headset. Immerse yourself in stunning visuals and crystal-clear sound as you explore new worlds and experience your favorite games and movies like never before."
+        },
+        "4": {
+            "name": "360° Rotating Stand",
+            "originalPrice": 8.50,
+            "currentPrice": 4.51,
+            "discount": 46,
+            "mainImage": "https://img.kwcdn.com/product/fancy/81e512b9-05ff-40b3-9974-1ebca1232485.jpg?imageView2/2/w/800/q/70/format/webp",
+            "thumbnails": [
+                "https://img.kwcdn.com/product/fancy/81157f13-161e-4391-b9c1-6c83a2313e18.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/fancy/ff6ce435-9b98-4b9e-8438-daaffcf93ae4.jpg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/fancy/d6312b94-ce16-4906-9f6e-cd3651074fbe.jpg?imageView2/2/w/800/q/70/format/webp"
+            ],
+            "badges": ["bestseller"],
+            "features": [
+                { "icon": "fa-mobile", "text": "Universal Fit" },
+                { "icon": "fa-sync", "text": "360° Rotation" }
+            ],
+            "description": "Our 360° Rotating Stand is the perfect accessory for your phone or tablet. With its universal fit and 360° rotation, you can easily adjust the stand to the perfect angle for watching videos, making video calls, and more."
+        },
+        "5": {
+            "name": "Anti-Sweat Finger Sleeve",
+            "originalPrice": 99.99,
+            "currentPrice": 49.99,
+            "discount": 50,
+            "mainImage": "https://img.kwcdn.com/product/open/2024-08-07/1723015413946-48b0dda1630345f7aae260e20cbd7fbe-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+            "thumbnails": [
+                "https://img.kwcdn.com/product/open/2024-08-07/1723015420348-6d1993833ea54f89a9abb53e9a3e488e-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/open/2024-08-07/1723015422549-7d43ace578ee43e3a94cf41ff4e3c9a8-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/open/2024-08-07/1723015426520-a9e6724223614ceebf5ab70591d46c45-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
+            ],
+            "badges": ["new"],
+            "features": [
+                { "icon": "fa-tshirt", "text": "Anti-Sweat Design" },
+                { "icon": "fa-fingerprint", "text": "Better Grip" }
+            ],
+            "description": "Stay cool and comfortable during intense gaming sessions with our Anti-Sweat Finger Sleeve. Made from breathable, moisture-wicking fabric, these finger sleeves are designed to keep your fingers dry and your grip secure, so you can focus on winning."
+        },
+        "6": {
+            "name": "3D Screen Manifier",
+            "originalPrice": 43.38,
+            "currentPrice": 4.66,
+            "discount": 89,
+            "mainImage": "https://img.kwcdn.com/product/fancy/c18eac6f-839e-4fe7-ab28-ab59538edf01.jpg?imageView2/2/w/800/q/70/format/webp",
+            "thumbnails": [
+                "https://img.kwcdn.com/product/open/2024-08-07/1723015420348-6d1993833ea54f89a9abb53e9a3e488e-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/open/2024-08-07/1723015422549-7d43ace578ee43e3a94cf41ff4e3c9a8-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+                "https://img.kwcdn.com/product/open/2024-08-07/1723015426520-a9e6724223614ceebf5ab70591d46c45-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
+            ],
+            "badges": ["trending"],
+            "features": [
+                { "icon": "fa-search", "text": "3D Viewing" },
+                { "icon": "fa-expand", "text": "Large Screen" }
+            ],
+            "description": "Experience movies, videos, and games like never before with our 3D Screen Magnifier. This portable screen magnifier is designed to provide an immersive viewing experience, with a large screen and 3D viewing capabilities that bring your favorite content to life."
+        }
+    }
+} 
