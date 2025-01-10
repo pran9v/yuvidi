@@ -427,9 +427,9 @@ margin:7%;
     margin-right: 4rem;
     padding-top: 100px;
 }
-.legal-content h1 {
+/* .legal-content h1 {
     font-size: 4rem;
-}
+} */
 .terms-header {
     color: var(--primary-color);
     padding: 20px 10px;
